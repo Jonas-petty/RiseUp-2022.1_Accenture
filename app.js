@@ -15,9 +15,9 @@ function handleQuantityChange(airClass, isIncrease) {
     if (airClass == 'first-class') {
         airClassTotal = airClassNewQuantity * 150;
     }
-    if (airClass == 'economy') {
-        airClassTotal = airClassNewQuantity * 100;
-    }
+    //if (airClass == 'economy') {
+    //    airClassTotal = airClassNewQuantity * 100;
+    //}
     document.getElementById(airClass + '-total').innerText = airClassTotal;
     calculateTotal ();
     document.getElementById('show-'+ airClass +'-quantity').innerText = airClassNewQuantity;
@@ -28,9 +28,9 @@ function handleQuantityChange(airClass, isIncrease) {
 function calculateTotal () {
     const fistClassQuantity = getQuantityNumber('first-class');
 
-    const economyQuantity = getQuantityNumber('economy');
+    //const economyQuantity = getQuantityNumber('economy');
 
-    const subtotal = fistClassQuantity * 150 + economyQuantity * 100;
+    const subtotal = fistClassQuantity * 150 //+ economyQuantity * 100;
     document.getElementById('subtotal').innerText = subtotal;
     document.getElementById('show-subtotal').innerText = subtotal;
 

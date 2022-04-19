@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css">
    
     <!-- Title -->
-    <title>Flight Booking</title>
+    <title>Compra de Passagem Aérea</title>
     
 </head>
 
@@ -33,49 +33,50 @@
         <div class="row d-flex align-items-center py-5">
             <div class="col-lg-5 m-auto">
                 <div class="pb-lg-5 pb-4 text-center">
-                    <img class="img-fluid logo" src="images/logo.png" alt="E-School Logo">
+                    <img class="img-fluid logo" src="images/logo6.png" alt="E-School Logo">
                 </div>
                 
 
                 <!-- Start Booking Section-->
                 <div id="booking-area" class="booking-form card p-4">
-                <h1 class="mb-3 text-center">Booking Flights</h1>
+                <h1 class="mb-3 text-center">Compra de Passagem Aérea</h1>
                     <div class="form-group">
-                        <label>Flying From</label>
+                        <label>Origem</label>
                         <input id="flying-form" class="form-control" type="text" placeholder="Dhake, Bangladesh">
                     </div>
                     <div class="form-group">
-                        <label>Flying To</label>
+                        <label>Destino</label>
                         <input id="flying-to" class="form-control" type="text" placeholder="Toronto, Canada">
                     </div>
                     <div class="d-flex justify-content-between">
                         <div class="form-group date">
-                            <label>Departure</label>
+                            <label>Partida</label>
                             <input id="departure-date" class="form-control" type="date">
                         </div>
                         <div class="form-group date">
-                            <label>Return</label>
+                            <label>Retorno</label>
                             <input id="return-date" class="form-control" type="date">
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="form-group mr-auto w-100">
-                            <label>First Class (<span id="first-class-total">0</span>)</label>
-                            <input id="first-class-quantity" class="form-control" type="text" value="0" readonly/>
+                            <label>Quantidade de Passageiros(<span id="first-class-total">0</span>)</label>
+                            <input id="first-class-quantity" class="form-control" type="number" value="0" readonly/>
                         </div>
                         <div class="plus-minus-btn">
                             <p><span onclick="handleQuantityChange('first-class', true)" class="plus">+</span><span onclick="handleQuantityChange('first-class', false)" class="minus">-</span></p>
                         </div>
                     </div>
+                    <!--
                     <div class="d-flex">
                         <div class="form-group mr-auto w-100">
-                            <label>Economy (<span id="economy-total">0</span>)</label>
+                            <label>Econômica (<span id="economy-total">0</span>)</label>
                             <input id="economy-quantity" class="form-control" type="text" value="0" readonly/>
                         </div>
                         <div class="plus-minus-btn">
                             <p><span onclick="handleQuantityChange('economy', true)" class="plus">+</span><span onclick="handleQuantityChange('economy', false)" class="minus">-</span></p>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="calculations mt-2">
                         <div class="d-flex justify-content-between">
                             <div class="left">
@@ -103,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <button id="book-now" class="btn btn-lg">Book Now</button>
+                    <button id="book-now" class="btn btn-lg">Comprar Agora</button>
                 </div>
                 <!-- End Booking Section-->
 
