@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-image: url("images/bg4.png");
+    background-image: url("images/bg2.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16,11 +16,11 @@ body {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 38px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
 }
  
 h3 {
@@ -28,7 +28,7 @@ h3 {
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 h5 {
@@ -44,7 +44,7 @@ label, span {
 }
 
 label {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 hr {
@@ -52,13 +52,19 @@ hr {
     margin-bottom: 10px;
 }
 
+#book-now {
+    font-size: 23px;
+    background-color: #0d2abb;
+}
+
 h1, 
 .booking-alert {
-    color: #FE0000;
+    color: #0d2abb;
+    font-weight: 900;
 }
 
 .logo {
-    height: 120px;
+    height: 150px;
 }
 
 .card {
@@ -129,4 +135,3 @@ h1,
         height: 100%;
     }
 }
-
