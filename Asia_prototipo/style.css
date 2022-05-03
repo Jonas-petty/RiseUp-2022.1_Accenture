@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-image: url("images/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 28px;
+}
+ 
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+} 
+
+label, span {
+    font-weight: 600;
+}
+
+label {
+    font-size: 22px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#book-now {
+    font-size: 23px;
+    background-color: #0d2abb;
+}
+
+h1, 
+.booking-alert {
+    color: #0d2abb;
+    font-weight: 900;
+}
+
+.logo {
+    height: 150px;
+}
+
+.card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn, .btn:hover {
+    color: #FFFFFF;
+    background: #FE0000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #FE0000;
+}
+
+.form-control[readonly] {
+    background: transparent;
+}
+
+.date {
+    width: 195px;
+}
+
+.plus-minus-btn {
+    padding-top: 37px;
+}
+
+.plus-minus-btn span {
+    font-size: 20px;
+    padding: 5px 10px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    border: 1px solid #ced4da;
+}
+
+.plus {
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 5px;
+}
+
+.minus {
+    border-radius: 0px 5px 5px 0px;
+    border-left: none!important;
+}
+
+.plus-minus-btn span:hover {
+    background: rgba(51, 82, 242, 0.1);
+}
+
+#booking-confirmation-area {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .date {
+        width: 49%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    body {
+        height: 100%;
+    }
+}

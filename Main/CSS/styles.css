@@ -1,0 +1,101 @@
+.main {
+  font-family: "Fredoka One";
+}
+
+.body {
+  background-color: gray;
+}
+
+#logo {
+  color: #fff;
+  font-size: 39px;
+}
+
+.my-icon {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #003373;
+  text-decoration: none;
+  padding-left: 4%;
+}
+
+#navbar-links {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: 16px;
+}
+
+#btn-login {
+  color: #fff;
+  background-image: linear-gradient(to right, #003373, #3998b8);
+  border-radius: 8px;
+  height: 100%;
+  text-align: center;
+  padding-top: 16px;
+}
+
+#btn-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#section-destaque {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#section-textos {
+  color: #fff;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#section-textos-body-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#div-saibamais {
+  background-color: #fff;
+  height: 53px;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 14px;
+}
+
+#btn-saibamais {
+  color: #003373;
+  text-decoration: none;
+}
+
+#section-imgs {
+  align-items: center;
+  padding-left: 15%;
+}
+
+#blindman-img {
+  height: 396px;
+  width: 265px;
+  border-radius: 36px;
+  box-shadow: 2px 2px 2px #003373;
+}
+
+#airplane-img {
+  height: 295px;
+  width: 265px;
+  border-radius: 36px;
+  box-shadow: 2px 2px 2px #003373;
+}
+
+#div-bot{
+  height: 200px;
+  align-items: right;
+  margin-top: 8%;
+}
+
+#carla-bot{
+  height: 128px;
+  align-items: center;
+}
