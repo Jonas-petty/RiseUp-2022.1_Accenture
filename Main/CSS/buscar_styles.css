@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredoka+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Fredoka One', cursive;
+}
+
+#logo {
+    color: #fff;
+    font-size: 39px;
+}
+
+.my-icon {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #003373;
+    text-decoration: none;
+    padding-left: 4%;
+}
+
+#navbar-links {
+    background-color: #fff;
+    border-radius: 8px;
+    padding-top: 16px;
+}
+
+#btn-login {
+    color: #fff;
+    background-image: linear-gradient(to right, #003373, #3998b8);
+    border-radius: 8px;
+    height: 100%;
+    text-align: center;
+    padding-top: 16px;
+}
+  
+  #btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+hr {
+    width: 10%;
+    margin: 20px auto;
+    color: #003373;
+    background-color: #003373;
+    border: 3px solid #003373;
+    border-radius: 5px;
+}
+
+section {
+    
+    color: white;
+    background-color: #003373;
+    padding: 10px;
+    max-width: 75%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.voos {
+    font-family: lato, sans-serif;
+    max-width: 95%;
+    margin: 5px auto;
+}
+
+.ori-des {
+    text-align: center;
+}
+
+.texto {
+    font-size: large;
+}
+
+.icon {
+    width: 20px;
+}
+
+.preco {
+    font-size: 30px;
+}
+
+section img {
+    width: 40px;
+}
+
+.filter_order {
+    text-align: left;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 20px;
+}
+
+.go-login {
+    width: 220px;
+    color: white;
+    text-decoration: none;
+    background-color: #FF6464;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.go-login:hover {
+    color: white;
+    background-color: #c24e4e;
+}
+
+.go-index {
+    width: 120px;
+    color: white;
+    text-decoration: none;
+    background-color: #3998B8;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.go-index:hover {
+    color: white;
+    background-color: #338dab;
+}

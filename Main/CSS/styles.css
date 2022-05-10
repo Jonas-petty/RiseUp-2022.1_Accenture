@@ -1,14 +1,18 @@
+/* Main CSS */
 .main {
   font-family: "Fredoka One";
 }
 
 .body {
   background-color: gray;
+  
 }
 
+/* Landingpage */
 #logo {
   color: #fff;
   font-size: 39px;
+  text-decoration: none;
 }
 
 .my-icon {
@@ -17,7 +21,7 @@
   font-size: 16px;
   color: #003373;
   text-decoration: none;
-  padding-left: 4%;
+  margin-left: 30px;
 }
 
 #navbar-links {
@@ -42,7 +46,6 @@
 
 #section-destaque {
   margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 #section-textos {
@@ -51,10 +54,17 @@
   margin-top: 2%;
 }
 
+#section-textos-lead {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
 #section-textos-body-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #div-saibamais {
@@ -89,13 +99,284 @@
   box-shadow: 2px 2px 2px #003373;
 }
 
-#div-bot{
-  height: 200px;
-  align-items: right;
-  margin-top: 8%;
+#div-title {
+  height: 150px;
+  align-items: center;
+  text-align: middle;
+  margin: 0px;
+  padding: 0px;
 }
 
-#carla-bot{
+#bot-img {
   height: 128px;
-  align-items: center;
+}
+
+#col-text {
+  color: #fff;
+  font-size: 31px;
+}
+
+#section-duvidas {
+  background-image: linear-gradient(to right, #003373, #3998b8);
+  border-radius: 16px;
+  height: 280px;
+}
+
+#section-duvidas-pergunta {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+#section-duvidas-resposta {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 10px;
+}
+
+#nav-footer {
+  color: #fff;
+}
+
+#nav-footer2 {
+  color: #003373;
+}
+
+/* Comprar Passagem */
+
+.myform {
+  background-color: #003373;
+  color: #fff;
+  border-radius: 10px;
+  width: 573px;
+}
+
+.btn-clear {
+  background-color: #bebebe !important;
+  color: #003373 !important;
+  border-color: #bebebe !important;
+}
+
+#title-input {
+  font-size: 20px;
+}
+
+.input-origem-destino {
+  border-radius: 4px;
+  width: 534px;
+}
+
+.input-passageiro {
+  height: 46px;
+  width: 534px;
+}
+
+#text-title {
+  color: #fff;
+  font-size: 31px;
+}
+
+#divider-section {
+  height: 8px;
+  width: 108px;
+  background-color: #003373;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#section-btns-comprar {
+  padding-left: 10px;
+  width: 100%;
+}
+
+#div-btn-voltar {
+  background-color: #3998b8;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#btn-voltar {
+  color: #fff;
+  text-decoration: none;
+}
+
+#div-btn-buscar {
+  background-color: #ff6464;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#btn-buscar {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Acessibilidade*/
+
+#text-title-acess {
+  color: #fff;
+  font-size: 31px;
+}
+
+#text-subtitle-acess {
+  color: #003373;
+}
+
+#main-text-acess {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#text-holder-acess {
+  height: 8px;
+  width: 108px;
+  background-color: #3998b8;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#text-question-acess {
+  color: #003373;
+  font-size: 24px;
+}
+
+#div-question-border {
+  border-bottom: 2px solid #003373;
+  width: 50%;
+}
+
+#div-acess-row1 {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#div-acess-row2 {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.icons {
+  font-size: 50px;
+  color: #fff;
+}
+
+#div-icon {
+  padding-left: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: #3998b8;
+}
+
+#title-text-acess {
+  color: #003373;
+  padding-top: 10px;
+}
+
+#content-text-acess {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#text-holder-acess {
+  width: 80px;
+  height: 6px;
+  background-color: #3998b8;
+}
+
+/* Footer */
+
+#footer-links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Buscar Voos */
+
+#section-buscarvoos {
+  background-color: #003373;
+  border-radius: 8px;
+}
+
+#voos-title {
+  text-align: center;
+  color: #fff;
+  font-size: 31px;
+}
+
+#voos-subtitle {
+  font-size: 20px;
+  color: #fff;
+}
+
+#voos-description {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 24px;
+}
+
+#voo {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: 1px solid #003373;
+}
+
+#voo-content {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#voo-content-title{
+  color: #003373;
+  font-size: 15px;
+}
+
+#voo-content-description{
+  color: #353B3D;
+  font-size: 20px;
+}
+
+#icons-beneficiosgol{
+  color: #003373;
+  font-size: 24px;
+  margin: 5px
+}
+
+/* Login */
+
+#login-esqueceu{
+  text-decoration: none;
+}
+
+#login-links{
+  margin-top: 2%;
+  color: #3998b8;
+  font-size: 16px;
+}
+
+#div-sem-login{
+  background-color: #ffffff;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px; 
+}
+
+#btn-sem-login{
+  text-decoration: none;
+  color: #003373;
 }
