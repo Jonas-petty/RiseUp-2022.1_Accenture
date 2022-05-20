@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html-background" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,18 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-    <title>RiseUp!</title>
+    <title>Buscar Voos</title>
 </head>
 
 <body class="container body main">
     <header>
 
         <div class="row">
-            <div class="col-2"><a href="/Main/index.html" id="logo"
-                    alt="Botão clicável com a logo do projeto, que o leva para a página principal.">RiseUp!</a></div>
+            <div class="col-2"><a href="/Main/index.html" id="logo">RiseUp!</a></div>
             <div class="col-8" id="navbar-links">
-                <a class="my-icon" href="/Main/Pages/Acessibilidade.html"
-                    alt="Botão de navegação que o leva para a página Acessibilidade">Acessibilidade</a>
+                <a class="my-icon" href="/Main/Pages/Acessibilidade.html">Acessibilidade</a>
                 <a class="my-icon" href="/Main/Pages/ComprarPassagem.html">Comprar passagem</a>
                 <a class="my-icon" href="#">Check-in</a>
                 <a class="my-icon" href="#">Status de voo</a>
@@ -37,83 +35,89 @@
             </div>
             <div class="col-2">
                 <div id="btn-login">
-                    <a id="btn-link" href="/Main/Pages/Login.html">Login</a>
+                    <a id="btn-link" href="/Main/Pages/Login.html">Bem vindo Ryan</a>
                 </div>
             </div>
         </div>
 
     </header>
 
-    <main class="container" id="section-destaque">
-        <section class="row">
+    <br>
 
-            <div class="col container" id="section-textos">
-                <h6 id="section-textos-lead">Bem vindo ao RiseUp Planes!</h6>
-                <h3>Tornando a web
-                    mais Acessível
-                </h3>
-                <h6 id="section-textos-body-text" align="justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod egestas odio sapien dis massa massa
-                    massa. Accumsan, cras tristique adipiscing consectetur. Laoreet ante quisque in nulla eleifend neque
-                    sed rutrum donec.
-                </h6>
-                <div class="col-4">
-                    <div id="div-saibamais">
-                        <a id="btn-saibamais" href="/Main/Pages/Acessibilidade.html">Saiba mais</a>
+    <main class="container">
+        <br>
+
+        <div class="container" align="center">
+            <h4 id="voos-title">Voo Selecionado</h4>
+            <div id="divider-section"></div>
+        </div>
+
+        <br>
+
+        <section class="container" id="section-buscarvoos">
+            <div align="center">
+                <br>
+                <h6 id="voos-subtitle">Selecione o voo</h6>
+            </div>
+
+            <!-- Voos Gol -->
+
+            <!-- Voo 1 -->
+            <div class="container row" id="voo" style="margin:0%">
+
+                <div class="row" id="voo-content">
+                    <div class="col">
+                        <h6 id="voo-content-title">Passageiro</h6>
+                        <h6 id="voo-content-description">Ryan Silva</h6>
+                    </div>
+                    <div class="col">
+                        <h6 id="voo-content-title">Origem</h6>
+                        <h6 id="voo-content-description">GRU - 10:10</h6>
+                    </div>
+                    <div class="col">
+                        <h6 id="voo-content-title">Destino</h6>
+                        <h6 id="voo-content-description">REC - 13:20 </h6>
+                    </div>
+                    <div class="col">
+                        <h6 id="voo-content-title">Companhia</h6>
+                        <h6 id="voo-content-description"><u>Gol</u></h6>
+                    </div>
+                    <div class="col">
+                        <h6 id="voo-content-title">Benefícios</h6>
+                        <div>
+                            <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                            <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                            <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6 id="voo-content-title">Valor Final</h6>
+                        <h6 id="voo-content-description">R$ 1.226,42</h6>
+                    </div>
+                    <div class="col">
+                        <a id="link-selecionar" href=""><h6 id="div-selecionarVoo">Selecionar Voos</h6></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="row" id="section-btns-comprar" align="middle">
+                <div class="col">
+                    <div id="div-btn-voltar">
+                        <a id="btn-voltar" href="/Main/Pages/Login.html">Voltar</a>
                     </div>
                 </div>
             </div>
 
-
-            <div class="col">
-                <div class="row" id="section-imgs">
-                    <div class="col-5"><img id="blindman-img" src="/Main/Images/Blindman.jpg"
-                            alt="Foto de um homem árabe que é cego de um dos olhos."></div>
-                    <div class="col-3"><img id="airplane-img" src="/Main/Images/Airplane.jpg"
-                            alt="Foto de um avião entre as nuvens."></div>
-                </div>
-            </div>
+            <br>
 
         </section>
 
-        <section class="container row" id="div-title" align="middle">
-            <div class="container col-12" id="col-text">
-                <h4>Dúvidas frequentes</h4>
-            </div>
-
-            <!-- Virtual Assistent -->
-            <!-- <div class="container col" id="col-bot"><a href="#"><img id="bot-img" src="/Main/Images/Bot.png"
-                        alt="Bot"></a>
-            </div> -->
-            
-        </section>
-
-        <section>
-            <div id="section-duvidas">
-                <h6 id="section-duvidas-pergunta">Pergunta 01?</h6>
-                <h6 id="section-duvidas-resposta" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ultrices erat
-                    lectus ipsum augue in pretium
-                    sollicitudin. Id ornare sagittis, urna cras et. Ac a pellentesque orci ridiculus praesent
-                    ullamcorper. Quisque ultricies nulla auctor lectus parturient.</h6>
-                <h6 id="section-duvidas-pergunta">Pergunta 02?</h6>
-                <h6 id="section-duvidas-resposta" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ultrices erat
-                    lectus ipsum augue in pretium
-                    sollicitudin. Id ornare sagittis, urna cras et. Ac a pellentesque orci ridiculus praesent
-                    ullamcorper. Quisque ultricies nulla auctor lectus parturient.</h6>
-                <h6 id="section-duvidas-pergunta">Pergunta 03?</h6>
-                <h6 id="section-duvidas-resposta" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Ultrices erat
-                    lectus ipsum augue in pretium
-                    sollicitudin. Id ornare sagittis, urna cras et. Ac a pellentesque orci ridiculus praesent
-                    ullamcorper. Quisque ultricies nulla auctor lectus parturient.</h6>
-            </div>
-        </section>
+        <br>
 
     </main>
-
-    <br>
 
     <div class="container">
         <footer class="row row-cols-5 py-5 my-5 border-top">
@@ -166,5 +170,3 @@
     </div>
 
 </body>
-
-</html>

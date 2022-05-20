@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 /* Main CSS */
 .main {
   font-family: "Fredoka One";
@@ -381,4 +379,63 @@
 #btn-sem-login{
   text-decoration: none;
   color: #003373;
+}
+
+/* Cadastro */
+
+#input-CEP{
+  width: 140px;
+}
+
+#search-correios{
+  text-align: left;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+
+#search-correios-link{
+  color: #fff;
+  font-size: 12px;
+}
+
+#input-nacionalidade{
+  text-align: left;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+
+#inputDocumemento{
+  width: 185px;
+}
+
+#input-Numero-Documemento{
+  width: 217px;
+}
+
+/* Necessidades Especiais */
+
+#check-necessidades{
+  font-size: 20px !important;
+}
+
+#text-necessidades{
+  padding-top: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* Voo Selecionado */
+
+#div-selecionarVoo{
+  border-radius: 20px;
+  background-color: #FF6464;
+  color: #fff;
+  height: 41px;
+  width: 168px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#link-selecionar{
+  text-decoration: none;
 }
