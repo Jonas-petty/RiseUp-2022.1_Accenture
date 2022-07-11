@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="html-background" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+
+    <title>Buscar Voos</title>
+    <link rel="icon" type="image/png" href="/Images/Airplane.png" />
+</head>
+
+<body class="container body main">
+    <!-- Navbar -->
+    <header>
+        <div class="row">
+            <div class="col-2" id="logo">
+                <a class="font-BIGtitle" href="/index.html"
+                    Title="Ícone clicável com a logo do projeto, que o leva para a página principal.">RiseUp!</a>
+            </div>
+            <div class="col-8" id="navbar-div">
+                <div class="row">
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/Acessibilidade.html"
+                            title="Botão de navegação que o leva para a página Acessibilidade">Acessibilidade</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a class="navbar-links" href="/Pages/ComprarPassagem.html"
+                            title="Botão de navegação que o leva para a página Comprar Passagem">Comprar passagem</a>
+                    </div>
+
+                    <div class="col-2">
+                        <a class="navbar-links" href="/Pages/Check-in.html"
+                            title="Botão de navegação que o leva para a página Chek-in">Check-in</a>
+                    </div>
+
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/StatusVoo.html"
+                            title="Botão de navegação que o leva para a página Status de Voo">Status de voo</a>
+                    </div>
+
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/Atendimento.html"
+                            title="Botão de navegação que o leva para a página Atendimento">Atendimento</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div id="btn-login">
+                    <a id="btn-link" href="/Pages/Login.html" title="Botão que leva para a página Login">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+
+    <br>
+
+    <main class="container">
+        <br>
+
+        <div class="container" align="center">
+            <h4 class="font-title-preto">Escolha de voo</h4>
+            <div id="divider-section"></div>
+        </div>
+
+        <br>
+
+        <section class="container" id="section-buscarvoos">
+            <div align="center">
+                <br>
+                <h6 class="font-title-branco">Voo <span id="tipoVoo">premium ou econômico</span></h6>
+                <h6 class="font-text-branco">Data: <span id="dataIda"></span></h6>
+            </div>
+            <div align="right">
+                <h6><a href="" id="voos-description"><u>Filtrar e ordernar</u></a></h6>
+            </div>
+
+            <!-- Voos Gol -->
+
+            <!-- Voo 1 -->
+            <!---->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo1">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 10:10 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 13:20 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">3:20</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">G3 1618 OPERADO POR <u>GOL</u></h6>
+                            <h6 id="voo-content-description"><u>Escala</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS GOL</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 952,67</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Voo 2 -->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo2">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 14:55 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 18:55 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">4:00</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">G7 2021 OPERADO POR <u>GOL</u></h6>
+                            <h6 id="voo-content-description"><u>Escala</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS GOL</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 998,99</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Voo 3 -->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo3">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 23:20 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 02:30 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">3:10</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">G12 4328 OPERADO POR <u>GOL</u></h6>
+                            <h6 id="voo-content-description"><u>Direto</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS GOL</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 1.170,62</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Voo Azul -->
+            <!-- Voo 4 -->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo4">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 05:00 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 10:00 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">5:00</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">VOO 4232 OPERADO POR <u>Azul</u></h6>
+                            <h6 id="voo-content-description"><u>Escala</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS Azul</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 1.175,42</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Voo 5 -->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo5">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 08:05</h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 11:05 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">3:00</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">VOO 2744 OPERADO POR <u>Azul</u></h6>
+                            <h6 id="voo-content-description"><u>Direto</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS Azul</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 1.240,00</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Voo 6 -->
+            <div class="container row voo" style="margin:0%">
+                <a href="/Pages/Login.html" class="voo-link" id="voo6">
+                    <div class="row" id="voo-content">
+                        <div class="col">
+                            <h6 id="voo-content-title">ORIGEM</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 13:10 </h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DESTINO</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 16:15</h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">DURAÇÃO</h6>
+                            <h6 id="voo-content-description">03:05</h6>
+                        </div>
+                        <div class="col-3">
+                            <h6 id="voo-content-title">VOO 2959 OPERADO POR <u>Azul</u></h6>
+                            <h6 id="voo-content-description"><u>Direto</u></h6>
+                        </div>
+                        <div class="col">
+                            <h6 id="voo-content-title">BENEFÍCIOS Azul</h6>
+                            <div>
+                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
+                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
+                            </div>
+                        </div>
+                        <div class="col" align="right">
+                            <h6 id="voo-content-title">A PARTIR DE</h6>
+                            <h6 id="voo-content-description">R$ 1.299,00</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <br>
+
+            <div class="row" id="section-btns-comprar" align="middle">
+                <div class="col">
+                    <div id="div-btn-voltar">
+                        <a id="btn-voltar" href="/Pages/Tarifas.html">Voltar</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        </section>
+
+        <br>
+
+    </main>
+
+    <!-- Footer -->
+    <div class="container footer">
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <h3 id="nav-footer">RiseUp!</h3>
+                </a>
+                <p id="nav-footer">© 2022</p>
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Acessibilidade.html" id="footer-links" class="nav-link p-0">Acessibilidade</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/ComprarPassagem.html" id="footer-links" class="nav-link p-0">Comprar
+                            passagem</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Check-in.html" id="footer-links" class="nav-link p-0">Check-in</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/StatusVoo.html" id="footer-links" class="nav-link p-0">Status de voo</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Contato</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Atendimento</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Telefone</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Email</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" target="_blank" id="footer-links" class="nav-link p-0">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Extras</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" id="footer-links" class="nav-link p-0">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+<script>
+    // Exibe origem e destion
+    function setAero() {
+        var origens = document.getElementsByClassName("aero_origem")
+        var destinos = document.getElementsByClassName("aero_destino")
+        for (var i = 0; i < origens.length; i++) {
+            origens[i].innerHTML = sessionStorage.getItem("origem_completo").split("-")[0]
+            destinos[i].innerHTML = sessionStorage.getItem("destino_completo").split("-")[0]
+        }
+    }
+
+    // Recolhe todos os dados
+    const onClick = function () {
+        var elementos = this.innerText.split("\n")
+        var origem = elementos[1]
+        var destino = elementos[3]
+        var duracao = elementos[5]
+        var cod_voo = elementos[6].split(" ")
+        var comp_aerea = cod_voo[4]
+        cod_voo = `${cod_voo[0]} ${cod_voo[1]}`
+        var modo = elementos[7]
+        var preco = elementos[11]
+
+        console.log(origem, destino, duracao, cod_voo, modo, comp_aerea, preco)
+        sessionStorage.setItem("origem", origem)
+        sessionStorage.setItem("destino", destino)
+        sessionStorage.setItem("duracao", duracao)
+        sessionStorage.setItem("cod_voo", cod_voo)
+        sessionStorage.setItem("modo", modo)
+        sessionStorage.setItem("comp_aerea", comp_aerea)
+        sessionStorage.setItem("preco", preco)
+    }
+
+    document.getElementById("voo1").onclick = onClick
+    document.getElementById("voo2").onclick = onClick
+    document.getElementById("voo3").onclick = onClick
+    document.getElementById("voo4").onclick = onClick
+    document.getElementById("voo5").onclick = onClick
+    document.getElementById("voo6").onclick = onClick
+
+
+    // Exibe a data de Ida
+    var dataErrada = sessionStorage.getItem("dataIda").split("-")
+    var dataFormatada = `${dataErrada[2]}/${dataErrada[1]}/${dataErrada[0]}`
+    document.getElementById("dataIda").innerHTML = dataFormatada
+
+    // Exibe o tipo do voo
+    document.getElementById("tipoVoo").innerHTML = sessionStorage.getItem("tipo_voo")
+
+    document.addEventListener("DOMContentLoaded", setAero, false)
+
+</script>
+
+<script type="text/javascript" src="/js/cookie.js"></script>
+<script type="text/javascript" src="/js/Scriptexterno.js"></script>
+
+</html>

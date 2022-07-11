@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="html-background" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+
+    <style>
+        /*the container must be positioned relative:*/
+        .autocomplete {
+            position: relative;
+            display: inline-block;
+        }
+
+        input {
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type=text] {
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+
+        input[type=submit] {
+            background-color: DodgerBlue;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            /*position the autocomplete items to be the same width as the container:*/
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #003373;
+            border-bottom: 1px solid #d4d4d4;
+        }
+
+        /*when hovering an item:*/
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+
+        /*when navigating through the items using the arrow keys:*/
+        .autocomplete-active {
+            background-color: DodgerBlue !important;
+            color: #ffffff;
+        }
+    </style>
+
+    <title>Comprar Passagem</title>
+    <link rel="icon" type="image/png" href="/Images/Airplane.png" />
+</head>
+
+<body class="container body main">
+    <!-- Navbar -->
+    <header>
+        <div class="row">
+            <div class="col-2" id="logo">
+                <a class="font-BIGtitle" href="/index.html"
+                    Title="Ícone clicável com a logo do projeto, que o leva para a página principal.">RiseUp!</a>
+            </div>
+            <div class="col-8" id="navbar-div">
+                <div class="row">
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/Acessibilidade.html"
+                            title="Botão de navegação que o leva para a página Acessibilidade">Acessibilidade</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a class="navbar-links" href="/Pages/ComprarPassagem.html"
+                            title="Botão de navegação que o leva para a página Comprar Passagem">Comprar passagem</a>
+                    </div>
+
+                    <div class="col-2">
+                        <a class="navbar-links" href="/Pages/Check-in.html"
+                            title="Botão de navegação que o leva para a página Chek-in">Check-in</a>
+                    </div>
+
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/StatusVoo.html"
+                            title="Botão de navegação que o leva para a página Status de Voo">Status de voo</a>
+                    </div>
+
+                    <div class="col">
+                        <a class="navbar-links" href="/Pages/Atendimento.html"
+                            title="Botão de navegação que o leva para a página Atendimento">Atendimento</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div id="btn-login">
+                    <a id="btn-link" href="/Pages/Login.html" title="Botão que leva para a página Login">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+
+    <br>
+
+    <main class="container">
+        <br>
+
+        <div class="container" align="center">
+            <h4 class="font-title-preto">Comprar passagem</h4>
+            <div id="divider-section"></div>
+        </div>
+
+        <br>
+        <!---->
+        <form name="myForm" class="container myform" action="/Pages/Tarifas.html" onsubmit="return validar()">
+
+            <br>
+
+            <!-- Trecho -->
+            <fieldset class="col-mb-3">
+                <legend class="col-form-label col-sm-2 pt-0 font-subtitle-branco">Trecho</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label btn-radio font-text-branco" for="flexRadioDefault1">
+                            Só Ida
+                        </label>
+                    </div>
+                    <!--
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label btn-radio font-text-branco" for="flexRadioDefault2">
+                            Ida e Volta
+                        </label>
+                    </div>
+                    -->
+                </div>
+
+                <br>
+
+                <fieldset>
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width:534px;">
+                            <label for="inputnome" class="form-label font-subtitle-branco ">Origem</label>
+                            <input class="input-origem-destino" id="myInput" type="text" name="myOrigem"
+                                placeholder="Origem" required>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width:534px;">
+                            <label for="inputnome" class="form-label font-subtitle-branco">Destino</label>
+                            <input class="input-origem-destino" id="myData" type="text" name="myDestino"
+                                placeholder="Destino" required>
+                        </div>
+                    </form>
+                </fieldset>
+
+                <br>
+
+                <div class="col-md-6">
+                    <label for="inputPassageiro" class="form-label font-subtitle-branco">Passageiros</label>
+                    <select id="inputPassageiro" class="form-select input-passageiro">
+                        <option selected>1 adulto(s) + 12 anos</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <label for="inputdataIda" class="form-label font-subtitle-branco">Data da Viagem da ida</label>
+                    <input type="date" class="form-control input-passageiro" id="inputdataIda" min="" required>
+                </div>
+
+                <br>
+                <!--
+                <div class="col-md">
+                    <label for="inputdataVolta" class="form-label font-subtitle-branco"><span
+                            id="viagem-volta-title">Data da Viagem de volta</span></label>
+                    <input type="date" class="form-control input-passageiro" id="inputdataVolta">
+                </div>
+                -->
+                <br>
+
+                <div class="row" id="section-btns-comprar" align="middle">
+                    <div class="col">
+                        <div id="div-btn-voltar">
+                            <a class="font-text-branco" id="btn-voltar" href="/index.html">Voltar</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="font-text-branco" id="btn_send_form" type="submit"
+                            onclick="reconheDados()">Prosseguir</button>
+                    </div>
+                </div>
+
+                <br>
+
+
+                </div>
+
+            </fieldset>
+        </form>
+
+        <br>
+
+    </main>
+
+    <!-- Footer -->
+    <div class="container footer">
+        <footer class="row row-cols-5 py-5 my-5 border-top">
+            <div class="col">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <h3 id="nav-footer">RiseUp!</h3>
+                </a>
+                <p id="nav-footer">© 2022</p>
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Menu</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Acessibilidade.html" id="footer-links" class="nav-link p-0">Acessibilidade</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/ComprarPassagem.html" id="footer-links" class="nav-link p-0">Comprar
+                            passagem</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Check-in.html" id="footer-links" class="nav-link p-0">Check-in</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/StatusVoo.html" id="footer-links" class="nav-link p-0">Status de voo</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Contato</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Atendimento</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Telefone</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Email</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" target="_blank" id="footer-links" class="nav-link p-0">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 id="nav-footer2">Extras</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" id="footer-links" class="nav-link p-0">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+
+        function autocomplete(inp, arr) {
+            /*the autocomplete function takes two arguments,
+            the text field element and an array of possible autocompleted values:*/
+            var currentFocus;
+            /*execute a function when someone writes in the text field:*/
+            inp.addEventListener("input", function (e) {
+                var a, b, i, val = this.value;
+                /*close any already open lists of autocompleted values*/
+                closeAllLists();
+                if (!val) { return false; }
+                currentFocus = -1;
+                /*create a DIV element that will contain the items (values):*/
+                a = document.createElement("DIV");
+                a.setAttribute("id", this.id + "autocomplete-list");
+                a.setAttribute("class", "autocomplete-items");
+                /*append the DIV element as a child of the autocomplete container:*/
+                this.parentNode.appendChild(a);
+                /*for each item in the array...*/
+                for (i = 0; i < arr.length; i++) {
+                    /*check if the item starts with the same letters as the text field value:*/
+                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                        /*create a DIV element for each matching element:*/
+                        b = document.createElement("DIV");
+                        /*make the matching letters bold:*/
+                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                        b.innerHTML += arr[i].substr(val.length);
+                        /*insert a input field that will hold the current array item's value:*/
+                        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                        /*execute a function when someone clicks on the item value (DIV element):*/
+                        b.addEventListener("click", function (e) {
+                            /*insert the value for the autocomplete text field:*/
+                            inp.value = this.getElementsByTagName("input")[0].value;
+                            /*close the list of autocompleted values,
+                            (or any other open lists of autocompleted values:*/
+                            closeAllLists();
+                        });
+                        a.appendChild(b);
+                    }
+                }
+            });
+            /*execute a function presses a key on the keyboard:*/
+            inp.addEventListener("keydown", function (e) {
+                var x = document.getElementById(this.id + "autocomplete-list");
+                if (x) x = x.getElementsByTagName("div");
+                if (e.keyCode == 40) {
+                    /*If the arrow DOWN key is pressed,
+                    increase the currentFocus variable:*/
+                    currentFocus++;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 38) { //up
+                    /*If the arrow UP key is pressed,
+                    decrease the currentFocus variable:*/
+                    currentFocus--;
+                    /*and and make the current item more visible:*/
+                    addActive(x);
+                } else if (e.keyCode == 13) {
+                    /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                    e.preventDefault();
+                    if (currentFocus > -1) {
+                        /*and simulate a click on the "active" item:*/
+                        if (x) x[currentFocus].click();
+                    }
+                }
+            });
+            function addActive(x) {
+                /*a function to classify an item as "active":*/
+                if (!x) return false;
+                /*start by removing the "active" class on all items:*/
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                /*add class "autocomplete-active":*/
+                x[currentFocus].classList.add("autocomplete-active");
+            }
+            function removeActive(x) {
+                /*a function to remove the "active" class from all autocomplete items:*/
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
+                }
+            }
+            function closeAllLists(elmnt) {
+                /*close all autocomplete lists in the document,
+                except the one passed as an argument:*/
+                var x = document.getElementsByClassName("autocomplete-items");
+                for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                        x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+            }
+            /*execute a function when someone clicks in the document:*/
+            document.addEventListener("click", function (e) {
+                closeAllLists(e.target);
+            });
+        }
+
+        /*An array containing all the country names in the world:*/
+
+        var countries = ["GRU - Guarulhos - São Paulo", "REC - Recife - Pernambuco", "AJU - Aracaju - Sergipe", "BHZ - Belo Horizonte - Minas Gerais", "BSB - Brasília"];
+
+
+
+        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+        autocomplete(document.getElementById("myInput"), countries);
+        autocomplete(document.getElementById("myData"), countries);
+
+        //Hide input depending on the radio button
+        /*
+        const radioButton1 = document.getElementById("flexRadioDefault1")
+        const radioButton2 = document.getElementById("flexRadioDefault2")
+
+
+        radioButton1.addEventListener("click", () => {
+            console.log("apertado1")
+            document.getElementById("inputdataVolta").style.display = "none"
+            document.getElementById("viagem-volta-title").innerHTML = ""
+            sessionStorage.setItem("esconder", "1")
+        })
+
+        radioButton2.addEventListener("click", () => {
+            console.log("apertado2")
+            document.getElementById("inputdataVolta").style.display = "block"
+            document.getElementById("viagem-volta-title").innerHTML = "Data da Viagem de volta"
+            sessionStorage.setItem("esconder", "0")
+        })
+        */
+
+        // Define a data mínima
+        var inputData = new Date()
+        document.getElementById("inputdataIda").min = inputData.toISOString().split("T")[0]
+
+        // Reconhe os valores de Origem e Destino e data de Ida e Volta
+        function reconheDados() {
+            // Origem e Destino
+            var origem = document.getElementById("myInput").value
+            var destino = document.getElementById("myData").value
+            // Data Ida e Volta
+            var dataIda = document.getElementById("inputdataIda").value
+            //var dataVolta = document.getElementById("inputdataVolta").value
+
+            console.log(origem)
+            console.log(destino)
+            console.log(dataIda)
+            //console.log(dataVolta)
+
+            sessionStorage.setItem("origem_completo", origem)
+            sessionStorage.setItem("destino_completo", destino)
+
+            sessionStorage.setItem("dataIda", dataIda)
+            //sessionStorage.setItem("dataVolta", dataVolta)
+        }
+
+        // valida o formulário
+        function validar() {
+            var origem = document.getElementById("myInput")
+            var destino = document.getElementById("myData")
+            if (origem.value === destino.value) {
+                alert("Os destino dever ser diferente da origem")
+                origem.focus()
+                return false
+            } else if (origem.value == "" || destino.value == "") {
+                alert("Preencha todos os campos")
+                origem.focus() 
+                return false
+            }
+        }
+
+    </script>
+    <script type="text/javascript" src="/js/cookie.js"></script>
+    <script type="text/javascript" src="/js/Scriptexterno.js"></script>
+</body>
+
+</html>

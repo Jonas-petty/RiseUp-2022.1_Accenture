@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="html-background" lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Icons Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Selecionar Assento</title>
+    <link rel="icon" type="image/png" href="/Images/Airplane.png" />
+  </head>
+
+  <body class="container body2 main2">
+    <br />
+
+    <div class="container" align="center">
+      <h4 class="font-title-branco">Selecionar Assento</h4>
+      <div id="divider-section"></div>
+    </div>
+
+    <br />
+
+    <div class="container" id="section-buscarvoos">
+      <div class="container" align="center">
+        <br>
+        <h4 class="font-subtitle-branco">Detalhes do Voo</h4>
+        <div id="divider-section"></div>
+      </div>
+      <div class="row passageiro-info2">
+        <div class="col">
+          <h6 class="font-subtitle-azul">Voo</h6>
+          <h6 class="font-text-preto"><span id="cod_voo">PUXAR DADO</span></h6>
+        </div>
+        <div class="col">
+          <h6 class="font-subtitle-azul">Origem</h6>
+          <h6 class="font-text-preto"><span id="origem">PUXAR DADO</span></h6>
+        </div>
+        <div class="col">
+          <h6 class="font-subtitle-azul">Destino</h6>
+          <h6 class="font-text-preto"><span id="destino">PUXAR DADO</span></h6>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="col">
+        <h6 class="font-subtitle-branco" align="center">Legenda dos assentos:</h6>
+      </div>
+      <br>
+      <br>
+      <div class="row" align="center">
+        <div class="col">
+          <i class="bi bi-circle subtitle-icon-circle-1"></i>
+          <h6 class="font-subtitle-branco" title="Círculo na cor cinza">
+            Econômico
+          </h6>
+        </div>
+        <div class="col">
+          <i class="bi bi-app subtitle-icon-circle-2"></i>
+          <h6 class="font-subtitle-branco" title="Quadrado na cor cinza" Tipo>
+            Premium
+          </h6>
+        </div>
+        <div class="col">
+          <i class="bi bi-circle-fill subtitle-icon-circle-3"></i>
+          <h6
+            class="font-subtitle-branco"
+            title="Círculo preenchido na cor verde"
+          >
+            Livre
+          </h6>
+        </div>
+        <div class="col">
+          <i class="bi bi-circle-fill subtitle-icon-circle-4"></i>
+          <h6
+            class="font-subtitle-branco"
+            title="Círculo preenchido na cor vermelho"
+          >
+            Ocupado
+          </h6>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Avião -->
+
+      <section class="section-aviao">
+        <div class="container cabine">
+          <!-- Sanitário -->
+          <div class="row">
+            <div class="col banheiro">
+              <div class="div-banheiro">
+                <img class="icons-plane" src="/Images/Toilet.png" alt="" />
+                <h6 title="Um do banheiros está localizado na parte superior esquerda do avião, após os assentos da fileira um do avião.">Banheiro</h6>
+              </div>
+            </div>
+            <!-- Refeitório -->
+            <div class="col refeitorio">
+              <div class="div-restaurant">
+                <img class="icons-plane" src="/Images/Restaurant.png" alt="" />
+                <h6 title="Um dos refeitórios está localizado na parte superior direita do avião, após os assentos da fileira um do avião.">Refeitório</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saídas de emergência -->
+          <div class="row saidas">
+            <div class="col">
+              <i class="bi bi-box-arrow-left icons-plane2"></i>
+            </div>
+            <div class="col-8">
+              <h6 class="font-title-preto margin-title" title="As duas primeiras saídas de emergências estão localizadas entre os banheiros e refeitórios superiores e os assentos da primeira fileira.">
+                Saídas de emergência
+              </h6>
+            </div>
+            <div class="col">
+              <i class="bi bi-box-arrow-right icons-plane2"></i>
+            </div>
+          </div>
+
+          <!-- Indicies -->
+          <div class="row">
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas na janela esquerda do avião ficam na COLUNA A.">A</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas no meio dos assentos A e C ficam na COLUNA B.">B</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas no corredor do lado esquerdo do avião ficam na COLUNA C.">C</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Indicador visual das fileiras do avião">Fileiras</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas no corredor do lado direito do avião ficam na COLUNA D.">D</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas no meio dos assentos D e F ficam na COLUNA E.">E</h6></div>
+            <div class="col" id="assentos-indices"><h6 id="assentos-indices-color" title="Cadeiras localizadas na janela direita do avião ficam na COLUNA F.">F</h6></div>
+          </div>
+
+          <!-- Parte um -->
+          <div class="row">
+            <!-- Fileira A Primeira parte -->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Esquerda - Perto da Saída de Energência - Tipo Premium - Coluna A - Fileira 1" id="A1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Esquerda - Tipo Premium - Coluna A - Fileira 2" id="A2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Esquerda - Tipo Premium - Coluna A - Fileira 3" id="A3"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira B Primeira parte-->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Esquerdo - Perto da Saída de Energência - Tipo Premium - Coluna B - Fileira 1" id="B1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Esquerdo - Tipo Premium - Coluna B - Fileira 2" id="B2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Esquerdo - Tipo Premium - Coluna B - Fileira 3" id="B3"></a><br>
+                <a class="bi bi-circle assentos-disp" href="/Pages/ConfirmarAssento.html"  title="Assento Livre - Meio Esquerdo - Tipo Econômico - Coluna B - Fileira 4" id="B4"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira C Primeira parte -->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Esquerdo - Perto da Saída de Energência - Tipo Premium - Coluna C - Fileira 1" id="C1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Esquerdo - Tipo Premium - Coluna C - Fileira 2" id="C2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Esquerdo - Tipo Premium - Coluna C - Fileira 3" id="C3"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Numeros da fileira Primeira parte-->
+            <div class="col" id="all-assentos">
+                <div id="fileira-indices">1</div>
+                <div id="fileira-indices">2</div>
+                <div id="fileira-indices">3</div>
+                <div id="fileira-indices">4</div>
+                <div id="fileira-indices">5</div>
+            </div>
+            <!-- Fileira D Primeira parte -->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Direito - Perto da Saída de Energência - Tipo Premium - Coluna D - Fileira 1" id="D1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Direito - Tipo Premium - Coluna D - Fileira 2" id="D2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Corredor Direito - Tipo Premium - Coluna D - Fileira 3" id="D3"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira E Primeira parte -->
+            <div class="col" id="all-assentos">
+                <!-- <i class="bi bi-x-circle assentos-bloqueado"></i><br>
+                <i class="bi bi-x-circle assentos-bloqueado"></i><br>
+                <i class="bi bi-x-circle assentos-bloqueado"></i><br> -->
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Direito - Perto da Saída de Energência - Tipo Premium - Coluna E - Fileira 1" id="E1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Direito - Tipo Premium - Coluna E - Fileira 2" id="E2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Meio Direito - Tipo Premium - Coluna E - Fileira 3" id="E3"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira F Primeira parte -->
+            <div class="col" id="all-assentos">
+                <!-- <i class="bi bi-x-circle assentos-bloqueado"></i><br>
+                <i class="bi bi-x-circle assentos-bloqueado"></i><br>
+                <i class="bi bi-x-circle assentos-bloqueado"></i><br> -->
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Direita - Perto da Saída de Energência - Tipo Premium - Coluna F - Fileira 1" id="F1"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Direita - Tipo Premium - Coluna F - Fileira 2" id="F2"></a><br>
+                <a class="bi bi-app assentos-Gol " href="/Pages/ConfirmarAssento.html" title="Assento Livre - Janela Direita - Tipo Premium - Coluna F - Fileira 3" id="F3"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+          </div>
+
+          <!-- Saídas de emergência -->
+          <div class="row">
+            <div class="col">
+              <i class="bi bi-box-arrow-left icons-plane2"></i>
+            </div>
+            <div class="col-8">
+              <h6 class="font-title-preto margin-title" title="As duas próximas saídas de emergências estão localizadas no meio do avião, entre os assentos da fileira cinco e os assentos da fileira seis.">
+                Saídas de emergência
+              </h6>
+            </div>
+            <div class="col">
+              <i class="bi bi-box-arrow-right icons-plane2"></i>
+            </div>
+          </div>
+
+          <!-- Parte dois -->
+          <div class="row">
+            <!-- Fileira A Segunda parte -->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-circle assentos-disp" href="/Pages/ConfirmarAssento.html"  title="Assento Livre - Janela Esquerda - Perto da Saída de Energência - Tipo Econômico - Coluna A - Fileira 6" id="A6"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <a class="bi bi-circle assentos-disp" href="/Pages/ConfirmarAssento.html"  title="Assento Livre - Janela Esquerda - Perto da Saída de Energência - Tipo Econômico - Coluna A - Fileira 10" id="A10"></a><br>
+            </div>
+            <!-- Fileira B Segunda parte-->
+            <div class="col" id="all-assentos">
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <a class="bi bi-circle assentos-disp" href="/Pages/ConfirmarAssento.html"  title="Assento Livre - Meio Esquerdo - Tipo Econômico - Coluna B - Fileira 9" id="B9"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira C Segunda parte -->
+            <div class="col" id="all-assentos">
+                <a class="bi bi-circle assentos-disp" href="/Pages/ConfirmarAssento.html"  title="Assento Livre - Corredor Esquerdo - Perto da Saída de Energência - Tipo Econômico - Coluna C - Fileira 6" id="C6"></a><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Numeros da fileira Segunda parte-->
+            <div class="col" id="all-assentos">
+                <div id="fileira-indices">6</div>
+                <div id="fileira-indices">7</div>
+                <div id="fileira-indices">8</div>
+                <div id="fileira-indices">9</div>
+                <div id="fileira-indices">10</div>
+            </div>
+            <!-- Fileira D Primeira parte -->
+            <div class="col" id="all-assentos">
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira E Primeira parte -->
+            <div class="col" id="all-assentos">
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+            <!-- Fileira F Primeira parte -->
+            <div class="col" id="all-assentos">
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+                <i class="bi bi-circle-fill assentos-ocupado"></i><br>
+            </div>
+
+            <!-- Saídas de emergência -->
+          <div class="row saidas">
+            <div class="col">
+              <i class="bi bi-box-arrow-left icons-plane2"></i>
+            </div>
+            <div class="col-8">
+              <h6 class="font-title-preto margin-title" title="As duas últimas saídas de emergências estão localizadas entre os assentos da fileira 10 e o sanitário traseiro.">
+                Saídas de emergência
+              </h6>
+            </div>
+            <div class="col">
+              <i class="bi bi-box-arrow-right icons-plane2"></i>
+            </div>
+          </div>
+
+          <!-- Sanitário -->
+          <div class="row">
+            <div class="col banheiro2">
+              <div class="div-banheiro2">
+                <img class="icons-plane" src="/Images/Toilet.png" alt="" />
+                <h6 title="O banheiro traseiro está localizado na parte inferior esquerda do avião, após os assentos da fileira dez do avião.">Banheiro</h6>
+              </div>
+            </div>
+            <!-- Refeitório -->
+            <div class="col refeitorio2">
+              <div class="div-restaurant2">
+                <img class="icons-plane" src="/Images/Restaurant.png" alt="" />
+                <h6 title="O refeitório traseiro está localizado na parte inferior direita do avião, após os assentos da fileira dez do avião.">Refeitório</h6>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <!-- Final da cabine -->
+        </div>
+
+        <div class="container assentos-cauda"></div>
+
+        <br />
+        <br />
+      </section>
+
+      <div class="row" id="section-btns-comprar" align="middle">
+        <div class="col">
+          <div id="div-btn-voltar">
+               <a class="font-text-branco" id="btn-voltar" href="/Pages/VooSelecionado.html">Voltar</a>
+          </div>
+        </div>
+      </div>
+
+      <br><br> 
+    <!-- Final do main -->
+    </div>
+
+    <br>
+  </body>
+  <script>
+    // Exibe nome
+    function get() {
+      var nome = sessionStorage.getItem("nome");
+      console.log(nome);
+      var list_nome = nome.split(" ");
+      document.getElementById("logo-username").innerHTML = list_nome[0];
+    }
+
+    // Exibe dados da viagem
+    document.getElementById("cod_voo").innerHTML = sessionStorage.getItem("cod_voo")
+    document.getElementById("origem").innerHTML = sessionStorage.getItem("origem")
+    document.getElementById("destino").innerHTML = sessionStorage.getItem("destino")
+
+    // Recolhe o assento escolhido
+    const onClick = function() {
+        console.log(this.id)
+        sessionStorage.setItem("assento", this.id)
+      }
+
+      document.getElementById("A1").onclick = onClick
+      document.getElementById("A2").onclick = onClick
+      document.getElementById("A3").onclick = onClick
+      document.getElementById("A6").onclick = onClick
+      document.getElementById("A10").onclick = onClick
+
+      document.getElementById("B1").onclick = onClick
+      document.getElementById("B2").onclick = onClick
+      document.getElementById("B3").onclick = onClick
+      document.getElementById("B4").onclick = onClick
+      document.getElementById("B9").onclick = onClick
+
+      document.getElementById("C1").onclick = onClick
+      document.getElementById("C2").onclick = onClick
+      document.getElementById("C3").onclick = onClick
+      document.getElementById("C6").onclick = onClick
+
+      document.getElementById("D1").onclick = onClick
+      document.getElementById("D2").onclick = onClick
+      document.getElementById("D3").onclick = onClick
+
+      document.getElementById("E1").onclick = onClick
+      document.getElementById("E2").onclick = onClick
+      document.getElementById("E3").onclick = onClick
+
+      document.getElementById("F1").onclick = onClick
+      document.getElementById("F2").onclick = onClick
+      document.getElementById("F3").onclick = onClick
+
+    document.addEventListener("DOMContentLoaded", get, false);
+  </script>
+  <script type="text/javascript" src="/js/cookie.js"></script>
+  <script type="text/javascript" src="/js/Scriptexterno.js"></script>
+</html>
